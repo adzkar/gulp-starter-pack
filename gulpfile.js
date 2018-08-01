@@ -20,10 +20,6 @@ var autoprefixer = require('gulp-autoprefixer');
 var sourcemaps = require('gulp-sourcemaps');
 
 
-gulp.task('hello', function() {
-	console.log('Hello World');
-});
-
 gulp.task('sass', function() {
 	return gulp.src('app/scss/**/*.scss')
       .pipe(sourcemaps.init())
@@ -94,4 +90,3 @@ gulp.task('default', function (callback) {
     callback
   )
 })
-
